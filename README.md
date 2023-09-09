@@ -8,6 +8,7 @@ Enables React Native apps on iOS and Android to swiftly return to the previously
 npm install @sleiv/react-native-previous-app-switcher
 
 or
+
 yarn add @sleiv/react-native-previous-app-switcher
 ```
 
