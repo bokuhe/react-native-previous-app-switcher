@@ -5,7 +5,6 @@ import { PreviousAppSwitcher } from '@sleiv/react-native-previous-app-switcher';
 
 export default function App() {
   const backToPreviousApp = async () => {
-    console.log(PreviousAppSwitcher);
     PreviousAppSwitcher.switchBack().catch((e) => {
       console.error(e);
     });

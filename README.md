@@ -14,8 +14,9 @@ npm install @sleiv/react-native-previous-app-switcher
 import PreviousAppSwitcher from '@sleiv/react-native-previous-app-switcher';
 
 // ...
-
-PreviousAppSwitcher.switch();
+PreviousAppSwitcher.switchBack().catch((e) => {
+  console.error(e);
+});
 ```
 
 ## Contributing
