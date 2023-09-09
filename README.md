@@ -6,11 +6,14 @@ Enables React Native apps on iOS and Android to swiftly return to the previously
 
 ```sh
 npm install @sleiv/react-native-previous-app-switcher
+
+or
+yarn add @sleiv/react-native-previous-app-switcher
 ```
 
 ## Usage
 
-```js
+```ts
 import PreviousAppSwitcher from '@sleiv/react-native-previous-app-switcher';
 
 // ...

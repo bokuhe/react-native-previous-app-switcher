@@ -1,6 +1,6 @@
 {
   "name": "@sleiv/react-native-previous-app-switcher",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Enables React Native apps on iOS and Android to swiftly return to the previously used application.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -102,18 +102,24 @@
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
+      "tagName": "v${version}",
+      "requireCleanWorkingDir": false,
+      "addUntrackedFiles": true
     },
     "npm": {
-      "publish": true
+      "publish": true,
+      "access": "public"
     },
     "github": {
-      "release": true
+      "release": false
     },
     "plugins": {
       "@release-it/conventional-changelog": {
         "preset": "angular"
       }
+    },
+    "hooks": {
+      "before:init": "yarn prepack"
     }
   },
   "eslintConfig": {
